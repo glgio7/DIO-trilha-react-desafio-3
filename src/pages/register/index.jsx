@@ -53,7 +53,7 @@ const Register = () => {
                 <SubtitleLogin>Crie sua conta e make the change._</SubtitleLogin>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Input placeholder="Nome Completo" leftIcon={<MdAccountCircle />} name="name"  control={control} />
-                    {errors.email && <span>Nome é obrigatório</span>}
+                    {errors.name && <span>Nome é obrigatório</span>}
                     <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
                     {errors.email && <span>E-mail é obrigatório</span>}
                     <Input type="password" placeholder="Senha" leftIcon={<MdLock />}  name="senha" control={control} />
